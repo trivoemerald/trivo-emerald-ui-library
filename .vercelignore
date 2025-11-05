@@ -1,0 +1,3 @@
+# Only ignore build artifacts, not source/config
+node_modules
+.env*.local
