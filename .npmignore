@@ -1,0 +1,42 @@
+# Source files
+src/
+stories/
+.storybook/
+
+# Development and build files
+*.log
+node_modules/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+coverage/
+*.test.*
+*.spec.*
+
+# Storybook
+storybook-static/
+
+# Build tools
+vite.config.ts
+vitest.config.ts
+vitest.shims.d.ts
+tsconfig.json
+
+# Git
+.git/
+.gitignore
+
+# Other
+*.tgz
+.DS_Store
+Thumbs.db
