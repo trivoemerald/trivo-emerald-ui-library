@@ -1,5 +1,3 @@
-**.gitignore:**
-```
 # Logs
 logs
 *.log
@@ -8,36 +6,19 @@ npm-debug.log*
 # Dependencies
 node_modules/
 
-# Build
+# Build output
 dist/
 dist-ssr/
+storybook-static/
 *.local
 
-# Editor
+# Editor artifacts
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# OS
+# OS generated files
 .DS_Store
 Thumbs.db
-
-# Storybook
-storybook-static/
-```
-
-**.npmignore:**
-```
-src/
-.storybook/
-node_modules/
-*.log
-.git/
-.vscode/
-.idea/
-*.test.tsx
-*.stories.tsx
-vitest.config.ts
-tsconfig.json
-vite.config.ts
+Thumbs.db

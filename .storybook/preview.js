@@ -1,0 +1,14 @@
+import "../src/styles/global.css";
+
+const preview = {
+  parameters: {
+    actions: { argTypesRegex: "^on[A-Z].*" },
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/i,
+      },
+    },
+  },
+};
+module.exports = preview;
