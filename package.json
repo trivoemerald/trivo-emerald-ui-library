@@ -1,6 +1,7 @@
 {
   "name": "trivo-ui-library",
   "version": "1.0.2",
+  "type": "module",
   "description": "A modern React UI component library built with TypeScript",
   "main": "dist/index.cjs",
   "module": "dist/index.js",

@@ -1,5 +1,6 @@
 import "../src/styles/global.css";
 
+/** @type { import('@storybook/react').Preview } */
 const preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
@@ -11,4 +12,5 @@ const preview = {
     },
   },
 };
-module.exports = preview;
+
+export default preview;

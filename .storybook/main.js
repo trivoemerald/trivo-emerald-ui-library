@@ -1,3 +1,4 @@
+/** @type { import('@storybook/react-vite').StorybookConfig } */
 const config = {
   stories: ["../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
@@ -14,4 +15,5 @@ const config = {
     defaultName: "Documentation",
   },
 };
-module.exports = config;
+
+export default config;
