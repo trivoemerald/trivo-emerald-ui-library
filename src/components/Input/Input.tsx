@@ -1,4 +1,5 @@
 import React, { forwardRef, useId } from "react";
+import { twMerge } from "tailwind-merge";
 import { useTheme } from "../../theme/ThemeProvider";
 import styles from "./Input.module.css";
 
@@ -33,19 +34,18 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
     const descriptionId = description ? `${inputId}-description` : undefined;
     const errorId = error ? `${inputId}-error` : undefined;
 
-    const inputClasses = [
+    const inputClasses = twMerge(
       styles.input,
-      leftSection ? styles.withLeftSection : "",
-      rightSection ? styles.withRightSection : "",
-      error ? styles.inputError : "",
-      className,
-    ]
-      .filter(Boolean)
-      .join(" ");
+      leftSection && styles.withLeftSection,
+      rightSection && styles.withRightSection,
+      error && styles.inputError,
+      className
+    );
 
-    const wrapperClasses = [styles.wrapper, fullWidth ? styles.fullWidth : ""]
-      .filter(Boolean)
-      .join(" ");
+    const wrapperClasses = twMerge(
+      styles.wrapper,
+      fullWidth && styles.fullWidth
+    );
 
     const styleVars: React.CSSProperties & Record<string, string> = {
       "--input-border-color": "rgba(15, 23, 42, 0.15)",

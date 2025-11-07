@@ -1,0 +1,84 @@
+.palette {
+  padding: 32px;
+  background: #ffffff;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #000;
+}
+
+.category {
+  margin-bottom: 48px;
+}
+
+.categoryTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+.colorGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.colorItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fafafa;
+  transition: box-shadow 0.2s;
+}
+
+.colorItem:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.colorSwatch {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.colorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.colorName {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.colorVariable {
+  font-size: 13px;
+  font-family: monospace;
+  color: #666;
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.colorValue {
+  font-size: 12px;
+  font-family: monospace;
+  color: #999;
+}

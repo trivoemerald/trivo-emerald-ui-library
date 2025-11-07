@@ -5,6 +5,7 @@ A modern React UI component library built with TypeScript, featuring customizabl
 ## Features
 
 - 🎨 **Customizable Theme System** - Built-in theme provider with customizable colors, spacing, and border radius
+- 🎨 **Tailwind CSS Integration** - Pre-configured with custom primary colors (Green #008000, Blue #1b4357)
 - 🔧 **TypeScript Support** - Full TypeScript support with comprehensive type definitions
 - 📱 **Responsive Design** - Components work seamlessly across different screen sizes
 - 🎯 **Tree Shakeable** - Only import the components you need
@@ -55,6 +56,19 @@ function MyComponent() {
 ```
 
 ## Components
+
+This library includes the following components:
+
+- **Button** - Versatile button with multiple variants
+- **Input** - Text input with validation states
+- **Modal** - Accessible modal dialog
+- **Drawer** - Slide-in panel from any direction
+- **SideBar** - Collapsible navigation sidebar
+- **Table** - Sortable data table with custom rendering
+- **TailwindButton** - Button component using Tailwind CSS
+- **ColorDemo** - Visual demo of Tailwind color utilities
+
+For detailed documentation, see the [Tailwind Quick Start Guide](./TAILWIND_QUICK_START.md).
 
 ### Button
 

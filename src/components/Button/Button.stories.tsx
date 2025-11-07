@@ -20,7 +20,15 @@ const meta: Meta<typeof Button> = {
     },
     color: {
       control: "select",
-      options: ["primary", "secondary", "success", "warning", "error"],
+      options: [
+        "primary",
+        "secondary",
+        "success",
+        "warning",
+        "error",
+        "primary-green",
+        "primary-blue",
+      ],
     },
     size: {
       control: "select",
@@ -84,6 +92,47 @@ export const Colors: Story = {
       <Button color="success">Success</Button>
       <Button color="warning">Warning</Button>
       <Button color="error">Error</Button>
+      <Button color="primary-green">Primary Green</Button>
+    </div>
+  ),
+};
+
+export const PrimaryGreen: Story = {
+  args: {
+    children: "Primary Green Button",
+    variant: "filled",
+    color: "primary-green",
+    size: "md",
+  },
+};
+
+export const PrimaryBlue: Story = {
+  args: {
+    children: "Primary Blue Button",
+    variant: "filled",
+    size: "md",
+  },
+};
+
+export const PrimaryColorVariants: Story = {
+  render: () => (
+    <div
+      style={{
+        display: "flex",
+        gap: "10px",
+        flexDirection: "column",
+        maxWidth: "300px",
+      }}
+    >
+      <Button variant="filled" color="primary-green">
+        Filled Green
+      </Button>
+      <Button variant="outline" color="primary-green">
+        Outline Green
+      </Button>
+      <Button variant="subtle" color="primary-green">
+        Subtle Green
+      </Button>
     </div>
   ),
 };

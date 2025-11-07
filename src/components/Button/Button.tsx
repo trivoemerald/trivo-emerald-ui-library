@@ -1,11 +1,18 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 import { useTheme } from "../../theme";
 import styles from "./Button.module.css";
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "filled" | "outline" | "subtle";
-  color?: "primary" | "secondary" | "success" | "warning" | "error";
+  color?:
+    | "primary"
+    | "secondary"
+    | "success"
+    | "warning"
+    | "error"
+    | "primary-green";
   size?: "xs" | "sm" | "md" | "lg" | "xl";
   fullWidth?: boolean;
   loading?: boolean;
@@ -25,16 +32,19 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
   const theme = useTheme();
 
-  const classes = [
+  const getButtonColor = () => {
+    if (color === "primary-green") return "var(--color-primary-green)";
+    return theme.colors[color];
+  };
+
+  const classes = twMerge(
     styles.button,
     styles[variant],
     styles[size],
-    fullWidth ? styles.fullWidth : "",
-    loading ? styles.loading : "",
-    className,
-  ]
-    .filter(Boolean)
-    .join(" ");
+    fullWidth && styles.fullWidth,
+    loading && styles.loading,
+    className
+  );
 
   return (
     <button
@@ -42,7 +52,7 @@ export const Button: React.FC<ButtonProps> = ({
       disabled={disabled || loading}
       style={
         {
-          "--button-color": theme.colors[color],
+          "--button-color": getButtonColor(),
         } as React.CSSProperties
       }
       {...props}

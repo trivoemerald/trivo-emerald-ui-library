@@ -26,7 +26,7 @@ export interface Theme {
 
 const defaultTheme: Theme = {
   colors: {
-    primary: "#228be6",
+    primary: "#1b4357",
     secondary: "#868e96",
     success: "#40c057",
     warning: "#fab005",
