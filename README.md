@@ -21,16 +21,54 @@ yarn add trivo-ui-library
 
 ## Quick Start
 
-### 1. Import the CSS styles
+### Prerequisites
 
-**IMPORTANT:** You must import the library's CSS file in your project to use the components properly.
+**This library uses Tailwind CSS utility classes.** Your project must have Tailwind CSS configured.
 
-```tsx
-// In your main App.tsx or index.tsx
-import "trivo-ui-library/dist/trivo-ui-library.css";
+If you don't have Tailwind installed:
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
 ```
 
-### 2. Use components
+### 1. Configure Tailwind to scan library files
+
+Update your `tailwind.config.js`:
+
+```js
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/trivo-ui-library/**/*.{js,ts,jsx,tsx}", // Add this!
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
+### 2. Import CSS variables and Tailwind
+
+In your main file (`App.tsx` or `index.tsx`):
+
+```tsx
+import "trivo-ui-library/variables.css"; // Library color variables
+import "./index.css"; // Your Tailwind CSS
+```
+
+Make sure your `index.css` includes Tailwind directives:
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+### 3. Use components
 
 ```tsx
 import React from "react";

@@ -15,16 +15,10 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: {
-        index: resolve(__dirname, "src/index.ts"),
-        variables: resolve(__dirname, "src/styles/variables.css"),
-      },
+      entry: resolve(__dirname, "src/index.ts"),
       name: "MyUILibrary",
       formats: ["es", "cjs"],
-      fileName: (format, entryName) =>
-        entryName === "index"
-          ? `index.${format === "es" ? "js" : "cjs"}`
-          : `${entryName}.css`,
+      fileName: (format) => `index.${format === "es" ? "js" : "cjs"}`,
     },
     rollupOptions: {
       external: ["react", "react-dom", "react/jsx-runtime"],
@@ -33,13 +27,8 @@ export default defineConfig({
           react: "React",
           "react-dom": "ReactDOM",
         },
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name === "variables.css") return "variables.css";
-          return "trivo-ui-library.[ext]";
-        },
       },
     },
-    cssCodeSplit: false,
     sourcemap: true,
     emptyOutDir: true,
   },
