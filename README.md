@@ -21,18 +21,13 @@ yarn add trivo-ui-library
 
 ## Quick Start
 
-### 1. Wrap your app with ThemeProvider
+### 1. Import the CSS styles
+
+**IMPORTANT:** You must import the library's CSS file in your project to use the components properly.
 
 ```tsx
-import React from "react";
-import { ThemeProvider } from "trivo-ui-library";
-import "trivo-ui-library/styles";
-
-function App() {
-  return <ThemeProvider>{/* Your app components */}</ThemeProvider>;
-}
-
-export default App;
+// In your main App.tsx or index.tsx
+import "trivo-ui-library/dist/trivo-ui-library.css";
 ```
 
 ### 2. Use components
@@ -47,9 +42,10 @@ function MyComponent() {
       <Button variant="filled" color="primary">
         Click me!
       </Button>
-      <Button variant="outline" color="secondary">
-        Outline Button
+      <Button variant="outline" color="primary-green">
+        Green Button
       </Button>
+      <Button color="secondary-light-rose">Custom Color</Button>
     </div>
   );
 }

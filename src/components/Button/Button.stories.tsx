@@ -76,6 +76,7 @@ export const Sizes: Story = {
   render: () => (
     <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
       <Button size="xs">Extra Small</Button>
+      <Button color="--color-secondary-light-rose">Rose</Button>
       <Button size="sm">Small</Button>
       <Button size="md">Medium</Button>
       <Button size="lg">Large</Button>
