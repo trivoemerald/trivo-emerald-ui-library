@@ -1,6 +1,5 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
-import { Button as Button2 } from "trivo-ui-library";
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -108,8 +107,6 @@ export const Button: React.FC<ButtonProps> = ({
     }
     return {};
   };
-
-  return <Button2 color="red-500">Click Me</Button2>;
 
   return (
     <button
