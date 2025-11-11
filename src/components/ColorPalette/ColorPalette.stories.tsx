@@ -45,35 +45,15 @@ and can be used throughout the application using Tailwind CSS v4.
 export default meta;
 type Story = StoryObj<typeof ColorPalette>;
 
-// All available colors from global.css
+// All available colors from variables.css
 const allColors: ColorItemProps[] = [
-  // Primary Colors
+  // Primary Colors - Green
   {
     name: "Primary Green",
     variable: "--color-primary-green",
-    value: "#008000",
+    value: "#008d00",
     category: "Primary Colors",
   },
-  {
-    name: "Primary Blue",
-    variable: "--color-primary-blue",
-    value: "#1b4357",
-    category: "Primary Colors",
-  },
-  {
-    name: "Blue",
-    variable: "--color-blue",
-    value: "#25607e",
-    category: "Primary Colors",
-  },
-  {
-    name: "Dark Blue",
-    variable: "--dark-blue",
-    value: "#002148",
-    category: "Primary Colors",
-  },
-
-  // Primary Green Variations
   {
     name: "Primary Green 90%",
     variable: "--color-primary-green-90",
@@ -123,7 +103,13 @@ const allColors: ColorItemProps[] = [
     category: "Primary Green Shades",
   },
 
-  // Primary Blue Variations
+  // Primary Colors - Blue
+  {
+    name: "Primary Blue",
+    variable: "--color-primary-blue",
+    value: "#1b4357",
+    category: "Primary Colors",
+  },
   {
     name: "Primary Blue 90%",
     variable: "--color-primary-blue-90",
@@ -172,18 +158,12 @@ const allColors: ColorItemProps[] = [
     value: "#e1e6e8",
     category: "Primary Blue Shades",
   },
-  {
-    name: "Primary Blue 5%",
-    variable: "--color-primary-blue-5",
-    value: "#2e8bc0",
-    category: "Primary Blue Shades",
-  },
 
   // Blue Variations
   {
-    name: "Blue 50%",
-    variable: "--color-blue-50",
-    value: "#92b0bf",
+    name: "Blue",
+    variable: "--color-blue",
+    value: "#25607e",
     category: "Blue Shades",
   },
   {
@@ -193,224 +173,220 @@ const allColors: ColorItemProps[] = [
     category: "Blue Shades",
   },
   {
-    name: "Blue Lavender",
-    variable: "--color-blue-lavender",
-    value: "#98aefb",
-    category: "Blue Shades",
-  },
-  {
-    name: "Other Blue",
-    variable: "--color-other-blue",
-    value: "#2196f3",
-    category: "Blue Shades",
-  },
-  {
-    name: "Dark Blue",
-    variable: "--color-dark-blue",
-    value: "#0c567b",
-    category: "Blue Shades",
-  },
-  {
-    name: "Light Blue",
-    variable: "--color-light-blue",
-    value: "#f0f6ff",
+    name: "Blue 50%",
+    variable: "--color-blue-50",
+    value: "#92b0bf",
     category: "Blue Shades",
   },
 
-  // Secondary Colors
+  // Secondary Colors - Pinks
   {
     name: "Light Rose",
-    variable: "--color-secondary-light-rose",
+    variable: "--color-light-rose",
     value: "#e1bab7",
     category: "Secondary Colors",
   },
   {
     name: "Dark Rose",
-    variable: "--color-secondary-dark-rose",
+    variable: "--color-dark-rose",
     value: "#9d5b65",
     category: "Secondary Colors",
   },
   {
     name: "Fire",
-    variable: "--color-secondary-fire",
+    variable: "--color-fire",
     value: "#b33106",
     category: "Secondary Colors",
   },
   {
-    name: "Accent Persian",
-    variable: "--color-secondary-accent-persion",
+    name: "Access Persimon",
+    variable: "--color-access-persimon",
     value: "#ff614a",
     category: "Secondary Colors",
   },
 
-  // Accent Colors
+  // Secondary Colors - Neutrals
   {
-    name: "Green Mint",
-    variable: "--color-green-mint",
-    value: "#a3cea3",
-    category: "Accent Colors",
+    name: "State",
+    variable: "--color-state",
+    value: "#454545",
+    category: "Neutral Colors",
+  },
+  {
+    name: "Porcelain",
+    variable: "--color-porcelain",
+    value: "#e1e6e8",
+    category: "Neutral Colors",
+  },
+  {
+    name: "Off White",
+    variable: "--color-off-white",
+    value: "#f5f5f5",
+    category: "Neutral Colors",
+  },
+  {
+    name: "Golden Flow",
+    variable: "--color-golden-flow",
+    value: "#fbe498",
+    category: "Neutral Colors",
+  },
+
+  // Secondary Colors - Greens
+  {
+    name: "Pine Green",
+    variable: "--color-pine-green",
+    value: "#004a00",
+    category: "Green Shades",
   },
   {
     name: "Sea Green",
     variable: "--color-sea-green",
     value: "#257e70",
-    category: "Accent Colors",
+    category: "Green Shades",
   },
   {
-    name: "Orange",
-    variable: "--color-orange",
-    value: "#d78e29",
-    category: "Accent Colors",
-  },
-  {
-    name: "Golden Glow",
-    variable: "--color-golden-glow",
-    value: "#fbe498",
-    category: "Accent Colors",
+    name: "Spark Green",
+    variable: "--color-spark-green",
+    value: "#80c080",
+    category: "Green Shades",
   },
 
-  // Neutral Colors
+  // Feedback Colors
   {
-    name: "Slate",
-    variable: "--color-slate",
-    value: "#454545",
-    category: "Neutral Colors",
+    name: "Success Light",
+    variable: "--color-success-light",
+    value: "#edf7ed",
+    category: "Feedback Colors",
   },
   {
-    name: "Grey",
-    variable: "--color-grey",
-    value: "#ccc",
-    category: "Neutral Colors",
+    name: "Success Dark",
+    variable: "--color-success-dark",
+    value: "#2e7d32",
+    category: "Feedback Colors",
   },
   {
-    name: "Grey Light",
-    variable: "--color-grey-light",
-    value: "#fbfbfb",
-    category: "Neutral Colors",
-  },
-  {
-    name: "Light Grey",
-    variable: "--color-light-grey",
-    value: "#f7f8fa",
-    category: "Neutral Colors",
-  },
-  {
-    name: "Disabled Light",
-    variable: "--color-disabled-light",
-    value: "#cacaca",
-    category: "Neutral Colors",
-  },
-  {
-    name: "Disabled Dark",
-    variable: "--color-disabled-dark",
-    value: "#939393",
-    category: "Neutral Colors",
-  },
-
-  // Sector Colors
-  {
-    name: "Energy 1",
-    variable: "--color-energy-1",
-    value: "#ffefc6",
-    category: "Sector Colors",
-  },
-  {
-    name: "Energy 2",
-    variable: "--color-energy-2",
-    value: "#fffaf2",
-    category: "Sector Colors",
-  },
-  {
-    name: "Water 1",
-    variable: "--color-water-1",
-    value: "#c6eaff",
-    category: "Sector Colors",
-  },
-  {
-    name: "Water 2",
-    variable: "--color-water-2",
-    value: "#f2fdff",
-    category: "Sector Colors",
-  },
-  {
-    name: "Logistics 1",
-    variable: "--color-logistics-1",
-    value: "#ffc6c6",
-    category: "Sector Colors",
-  },
-  {
-    name: "Logistics 2",
-    variable: "--color-logistics-2",
-    value: "#fff2f2",
-    category: "Sector Colors",
-  },
-  {
-    name: "Electronics 1",
-    variable: "--color-electronics-1",
-    value: "#c6d9ff",
-    category: "Sector Colors",
-  },
-  {
-    name: "Electronics 2",
-    variable: "--color-electronics-2",
-    value: "#f3f2ff",
-    category: "Sector Colors",
-  },
-  {
-    name: "Environment 1",
-    variable: "--color-environment-1",
-    value: "#8bfff8",
-    category: "Sector Colors",
-  },
-  {
-    name: "Environment 2",
-    variable: "--color-environment-2",
-    value: "#f2fffd",
-    category: "Sector Colors",
-  },
-  {
-    name: "Agriculture 1",
-    variable: "--color-agriculture-1",
-    value: "#c6ffd9",
-    category: "Sector Colors",
-  },
-  {
-    name: "Agriculture 2",
-    variable: "--color-agriculture-2",
-    value: "#f2fff5",
-    category: "Sector Colors",
-  },
-  {
-    name: "Material Sector",
-    variable: "--color-material-sector",
-    value: "#8399e7",
-    category: "Sector Colors",
-  },
-
-  // Special Purpose
-  {
-    name: "Emerald User",
-    variable: "--color-emerald-user",
-    value: "#004a00",
-    category: "Special Purpose",
-  },
-  {
-    name: "Business Potential",
-    variable: "--color-business-potential",
-    value: "#526fa7",
-    category: "Special Purpose",
+    name: "Error Light",
+    variable: "--color-error-light",
+    value: "#fdeded",
+    category: "Feedback Colors",
   },
   {
     name: "Error Dark",
     variable: "--color-error-dark",
     value: "#d32f2f",
-    category: "Special Purpose",
+    category: "Feedback Colors",
   },
   {
     name: "Info Light",
     variable: "--color-info-light",
     value: "#e5f6fd",
-    category: "Special Purpose",
+    category: "Feedback Colors",
+  },
+  {
+    name: "Info Dark",
+    variable: "--color-info-dark",
+    value: "#0288d1",
+    category: "Feedback Colors",
+  },
+  {
+    name: "Warning Light",
+    variable: "--color-warning-light",
+    value: "#fff4e5",
+    category: "Feedback Colors",
+  },
+  {
+    name: "Warning Dark",
+    variable: "--color-warning-dark",
+    value: "#ef6c00",
+    category: "Feedback Colors",
+  },
+
+  // System Colors
+  {
+    name: "Link Blue",
+    variable: "--color-link-blue",
+    value: "#3e9ac2",
+    category: "System Colors",
+  },
+  {
+    name: "Water Sector",
+    variable: "--color-water-sector",
+    value: "#71bec9",
+    category: "System Colors",
+  },
+  {
+    name: "Energy Sector",
+    variable: "--color-energy-sector",
+    value: "#c9bb71",
+    category: "System Colors",
+  },
+  {
+    name: "Agriculture Sector",
+    variable: "--color-agriculture-sector",
+    value: "#71c9a4",
+    category: "System Colors",
+  },
+  {
+    name: "Logistics & Packaging",
+    variable: "--color-logistics-packaging",
+    value: "#c97171",
+    category: "System Colors",
+  },
+  {
+    name: "Advanced Materials Sector",
+    variable: "--color-advanced-materials-sector",
+    value: "#8399e7",
+    category: "System Colors",
+  },
+  {
+    name: "Rejected Assessment Status",
+    variable: "--color-rejected-assessment-status",
+    value: "#b90000",
+    category: "System Colors",
+  },
+  {
+    name: "Very Light Grey",
+    variable: "--color-very-light-grey",
+    value: "#f7f8fa",
+    category: "System Colors",
+  },
+  {
+    name: "Business Potential",
+    variable: "--color-business-potential",
+    value: "#526fa7",
+    category: "System Colors",
+  },
+  {
+    name: "Attractiveness Transaction",
+    variable: "--color-attractiveness-transaction",
+    value: "#9652a7",
+    category: "System Colors",
+  },
+  {
+    name: "Blue Other",
+    variable: "--color-blue-other",
+    value: "#2196f3",
+    category: "System Colors",
+  },
+  {
+    name: "Dark Blue",
+    variable: "--color-dark-blue",
+    value: "#0c567b",
+    category: "System Colors",
+  },
+
+  // Disabled States
+  {
+    name: "Disabled Dark",
+    variable: "--color-disabled-dark",
+    value: "#939393",
+    category: "Disabled States",
+  },
+  {
+    name: "Disabled Light",
+    variable: "--color-disabled-light",
+    value: "#cacaca",
+    category: "Disabled States",
   },
 ];
 
@@ -430,21 +406,55 @@ export const PrimaryColors: Story = {
 
 export const GreenShades: Story = {
   args: {
-    colors: allColors.filter((c) => c.category === "Primary Green Shades"),
-    title: "Primary Green Variations",
+    colors: allColors.filter(
+      (c) =>
+        c.category === "Primary Green Shades" || c.category === "Green Shades"
+    ),
+    title: "Green Color Variations",
   },
 };
 
 export const BlueShades: Story = {
   args: {
-    colors: allColors.filter((c) => c.category?.includes("Blue")),
+    colors: allColors.filter(
+      (c) =>
+        c.category === "Primary Blue Shades" || c.category === "Blue Shades"
+    ),
     title: "Blue Color Variations",
   },
 };
 
-export const SectorColors: Story = {
+export const SecondaryColors: Story = {
   args: {
-    colors: allColors.filter((c) => c.category === "Sector Colors"),
-    title: "Industry Sector Colors",
+    colors: allColors.filter((c) => c.category === "Secondary Colors"),
+    title: "Secondary Colors",
+  },
+};
+
+export const NeutralColors: Story = {
+  args: {
+    colors: allColors.filter((c) => c.category === "Neutral Colors"),
+    title: "Neutral Colors",
+  },
+};
+
+export const FeedbackColors: Story = {
+  args: {
+    colors: allColors.filter((c) => c.category === "Feedback Colors"),
+    title: "Feedback & Status Colors",
+  },
+};
+
+export const SystemColors: Story = {
+  args: {
+    colors: allColors.filter((c) => c.category === "System Colors"),
+    title: "System & Sector Colors",
+  },
+};
+
+export const DisabledStates: Story = {
+  args: {
+    colors: allColors.filter((c) => c.category === "Disabled States"),
+    title: "Disabled States",
   },
 };

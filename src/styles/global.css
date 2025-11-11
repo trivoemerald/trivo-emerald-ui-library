@@ -1,21 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-blue-lavender: #98aefb;
-  --color-green-mint: #a3cea3;
-  --color-grey-light: #fbfbfb;
-  --color-energy-1: #ffefc6;
-  --color-energy-2: #fffaf2;
-  --color-water-1: #c6eaff;
-  --color-water-2: #f2fdff;
-  --color-logistics-1: #ffc6c6;
-  --color-logistics-2: #fff2f2;
-  --color-electronics-1: #c6d9ff;
-  --color-electronics-2: #f3f2ff;
-  --color-environment-1: #8bfff8;
-  --color-environment-2: #f2fffd;
-  --color-agriculture-1: #c6ffd9;
-  --color-agriculture-2: #f2fff5;
+  /* Primary Colors - Emerald Green */
+  --color-primary-green: #008d00;
   --color-primary-green-90: #369a36;
   --color-primary-green-80: #52a752;
   --color-primary-green-70: #6db46d;
@@ -24,8 +11,9 @@
   --color-primary-green-35: #bfdbbf;
   --color-primary-green-25: #dae8da;
   --color-primary-green-15: #f5f5f5;
-  --color-emerald-user: #004a00;
-  --color-primary-green: #008000;
+
+  /* Primary Colors - Nile Blue */
+  --color-primary-blue: #1b4357;
   --color-primary-blue-90: #345667;
   --color-primary-blue-80: #4c6978;
   --color-primary-blue-70: #637c8a;
@@ -34,31 +22,56 @@
   --color-primary-blue-35: #adbbc1;
   --color-primary-blue-25: #c7d0d4;
   --color-primary-blue-15: #e1e6e8;
-  --color-primary-blue-5: #2e8bc0;
-  --color-primary-blue: #1b4357;
+
+  /* Primary Colors - Blue */
   --color-blue: #25607e;
-  --color-blue-50: #92b0bf;
   --color-blue-70: #5c889f;
-  --dark-blue: #002148;
-  --color-secondary-light-rose: #e1bab7;
-  --color-secondary-dark-rose: #9d5b65;
-  --color-secondary-fire: #b33106;
-  --color-secondary-accent-persion: #ff614a;
-  --color-slate: #454545;
-  --color-golden-glow: #fbe498;
+  --color-blue-50: #92b0bf;
+
+  /* Secondary Colors - Pinks */
+  --color-light-rose: #e1bab7;
+  --color-dark-rose: #9d5b65;
+  --color-fire: #b33106;
+  --color-access-persimon: #ff614a;
+
+  /* Secondary Colors - Neutrals */
+  --color-state: #454545;
+  --color-porcelain: #e1e6e8;
+  --color-off-white: #f5f5f5;
+  --color-golden-flow: #fbe498;
+
+  /* Secondary Colors - Greens */
+  --color-pine-green: #004a00;
   --color-sea-green: #257e70;
-  --color-light-grey: #f7f8fa;
-  --color-light-blue: #f0f6ff;
-  --color-disabled-light: #cacaca;
-  --color-disabled-dark: #939393;
-  --color-other-blue: #2196f3;
-  --color-dark-blue: #0c567b;
-  --color-orange: #d78e29;
+  --color-spark-green: #80c080;
+
+  /* Feedback Colors */
+  --color-success-light: #edf7ed;
+  --color-success-dark: #2e7d32;
+  --color-error-light: #fdeded;
   --color-error-dark: #d32f2f;
-  --color-material-sector: #8399e7;
   --color-info-light: #e5f6fd;
+  --color-info-dark: #0288d1;
+  --color-warning-light: #fff4e5;
+  --color-warning-dark: #ef6c00;
+
+  /* Other System Colors */
+  --color-link-blue: #3e9ac2;
+  --color-water-sector: #71bec9;
+  --color-energy-sector: #c9bb71;
+  --color-agriculture-sector: #71c9a4;
+  --color-logistics-packaging: #c97171;
+  --color-advanced-materials-sector: #8399e7;
+  --color-rejected-assessment-status: #b90000;
+  --color-very-light-grey: #f7f8fa;
   --color-business-potential: #526fa7;
-  --color-grey: #ccc;
+  --color-attractiveness-transaction: #9652a7;
+  --color-blue-other: #2196f3;
+  --color-dark-blue: #0c567b;
+
+  /* Disabled States */
+  --color-disabled-dark: #939393;
+  --color-disabled-light: #cacaca;
 }
 
 :root {

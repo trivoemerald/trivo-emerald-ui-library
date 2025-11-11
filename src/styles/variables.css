@@ -3,95 +3,82 @@
  * Import this file in your project to use the design system colors
  * 
  * Usage:
- * import "trivo-ui-library/dist/variables.css";
+ * import "trivo-ui-library/variables.css";
  */
 
 :root {
-  /* Primary Colors */
-  --color-primary-green: #008000;
+  /* Primary Colors - Emerald Green */
+  --color-primary-green: #008d00;
+  --color-primary-green-90: #369a36;
+  --color-primary-green-80: #52a752;
+  --color-primary-green-70: #6db46d;
+  --color-primary-green-60: #80c080;
+  --color-primary-green-50: #a3cea3;
+  --color-primary-green-35: #bfdbbf;
+  --color-primary-green-25: #dae8da;
+  --color-primary-green-15: #f5f5f5;
+
+  /* Primary Colors - Nile Blue */
   --color-primary-blue: #1b4357;
+  --color-primary-blue-90: #345667;
+  --color-primary-blue-80: #4c6978;
+  --color-primary-blue-70: #637c8a;
+  --color-primary-blue-60: #7b919c;
+  --color-primary-blue-50: #94a5ae;
+  --color-primary-blue-35: #adbbc1;
+  --color-primary-blue-25: #c7d0d4;
+  --color-primary-blue-15: #e1e6e8;
 
-  /* Green Shades */
-  --color-primary-green-90: #1a8c1a;
-  --color-primary-green-80: #339933;
-  --color-primary-green-70: #4da64d;
-  --color-primary-green-60: #66b366;
-  --color-primary-green-50: #80c080;
-  --color-primary-green-40: #99cc99;
-  --color-primary-green-30: #b3d9b3;
-  --color-primary-green-20: #cce6cc;
-  --color-primary-green-10: #e6f2e6;
+  /* Primary Colors - Blue */
+  --color-blue: #25607e;
+  --color-blue-70: #5c889f;
+  --color-blue-50: #92b0bf;
 
-  /* Blue Shades */
-  --color-primary-blue-90: #2e5368;
-  --color-primary-blue-80: #426379;
-  --color-primary-blue-70: #55738a;
-  --color-primary-blue-60: #69839b;
-  --color-primary-blue-50: #7c93ac;
-  --color-primary-blue-40: #90a3bd;
-  --color-primary-blue-30: #a3b3ce;
-  --color-primary-blue-20: #b7c3df;
-  --color-primary-blue-10: #cad3f0;
+  /* Secondary Colors - Pinks */
+  --color-light-rose: #e1bab7;
+  --color-dark-rose: #9d5b65;
+  --color-fire: #b33106;
+  --color-access-persimon: #ff614a;
 
-  /* Sector Colors */
-  --color-energy: #ff6b35;
-  --color-water: #004e89;
-  --color-logistics: #f77f00;
-  --color-electronics: #06d6a0;
-  --color-environment: #118ab2;
-  --color-agriculture: #6a994e;
+  /* Secondary Colors - Neutrals */
+  --color-state: #454545;
+  --color-porcelain: #e1e6e8;
+  --color-off-white: #f5f5f5;
+  --color-golden-flow: #fbe498;
 
-  /* Accent Colors */
-  --color-warning: #fbbf24;
-  --color-error: #ef4444;
-  --color-success: #10b981;
-  --color-info: #3b82f6;
+  /* Secondary Colors - Greens */
+  --color-pine-green: #004a00;
+  --color-sea-green: #257e70;
+  --color-spark-green: #80c080;
 
-  /* Additional Colors */
-  --color-slate: #64748b;
-  --color-gray: #6b7280;
-  --color-zinc: #71717a;
-  --color-neutral: #737373;
-  --color-stone: #78716c;
-  --color-red: #ef4444;
-  --color-orange: #f97316;
-  --color-amber: #f59e0b;
-  --color-yellow: #eab308;
-  --color-lime: #84cc16;
-  --color-green: #22c55e;
-  --color-emerald: #10b981;
-  --color-teal: #14b8a6;
-  --color-cyan: #06b6d4;
-  --color-sky: #0ea5e9;
-  --color-blue: #3b82f6;
-  --color-indigo: #6366f1;
-  --color-violet: #8b5cf6;
-  --color-purple: #a855f7;
-  --color-fuchsia: #d946ef;
-  --color-pink: #ec4899;
-  --color-rose: #f43f5e;
+  /* Diagram Colors */
+  /* Using existing definitions above */
 
-  /* Light Variants */
-  --color-secondary-light-slate: #cbd5e1;
-  --color-secondary-light-gray: #d1d5db;
-  --color-secondary-light-zinc: #d4d4d8;
-  --color-secondary-light-neutral: #d4d4d4;
-  --color-secondary-light-stone: #d6d3d1;
-  --color-secondary-light-red: #fca5a5;
-  --color-secondary-light-orange: #fdba74;
-  --color-secondary-light-amber: #fcd34d;
-  --color-secondary-light-yellow: #fde047;
-  --color-secondary-light-lime: #bef264;
-  --color-secondary-light-green: #86efac;
-  --color-secondary-light-emerald: #6ee7b7;
-  --color-secondary-light-teal: #5eead4;
-  --color-secondary-light-cyan: #67e8f9;
-  --color-secondary-light-sky: #7dd3fc;
-  --color-secondary-light-blue: #93c5fd;
-  --color-secondary-light-indigo: #a5b4fc;
-  --color-secondary-light-violet: #c4b5fd;
-  --color-secondary-light-purple: #d8b4fe;
-  --color-secondary-light-fuchsia: #f0abfc;
-  --color-secondary-light-pink: #f9a8d4;
-  --color-secondary-light-rose: #fda4af;
+  /* Feedback Colors */
+  --color-success-light: #edf7ed;
+  --color-success-dark: #2e7d32;
+  --color-error-light: #fdeded;
+  --color-error-dark: #d32f2f;
+  --color-info-light: #e5f6fd;
+  --color-info-dark: #0288d1;
+  --color-warning-light: #fff4e5;
+  --color-warning-dark: #ef6c00;
+
+  /* Other System Colors */
+  --color-link-blue: #3e9ac2;
+  --color-water-sector: #71bec9;
+  --color-energy-sector: #c9bb71;
+  --color-agriculture-sector: #71c9a4;
+  --color-logistics-packaging: #c97171;
+  --color-advanced-materials-sector: #8399e7;
+  --color-rejected-assessment-status: #b90000;
+  --color-very-light-grey: #f7f8fa;
+  --color-business-potential: #526fa7;
+  --color-attractiveness-transaction: #9652a7;
+  --color-blue-other: #2196f3;
+  --color-dark-blue: #0c567b;
+
+  /* Disabled States */
+  --color-disabled-dark: #939393;
+  --color-disabled-light: #cacaca;
 }

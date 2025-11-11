@@ -1,6 +1,6 @@
 {
   "name": "trivo-ui-library",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "type": "module",
   "description": "A modern React UI component library built with TypeScript",
   "main": "dist/index.cjs",
@@ -12,14 +12,20 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./styles": "./dist/trivo-ui-library.css",
-    "./variables.css": "./dist/variables.css"
+    "./styles": {
+      "types": "./dist/styles.d.ts",
+      "default": "./dist/trivo-ui-library.css"
+    },
+    "./variables.css": {
+      "types": "./dist/styles.d.ts",
+      "default": "./dist/variables.css"
+    }
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "vite build && cp src/styles/variables.css dist/variables.css",
+    "build": "vite build && node -e \"require('fs').copyFileSync('src/styles/variables.css', 'dist/variables.css'); require('fs').copyFileSync('src/styles.d.ts', 'dist/styles.d.ts')\"",
     "dev": "vite build --watch",
     "test": "vitest",
     "storybook": "storybook dev -p 6006",
