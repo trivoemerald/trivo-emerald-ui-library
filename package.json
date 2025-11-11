@@ -1,6 +1,6 @@
 {
   "name": "trivo-ui-library",
-  "version": "1.0.12",
+  "version": "1.0.14",
   "type": "module",
   "description": "A modern React UI component library built with TypeScript",
   "main": "dist/index.cjs",
@@ -55,6 +55,7 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.2",
+    "@radix-ui/react-slot": "^1.2.4",
     "@rollup/plugin-commonjs": "^29.0.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-typescript": "^12.3.0",
@@ -70,6 +71,8 @@
     "@vitest/browser-playwright": "^4.0.6",
     "@vitest/coverage-v8": "^4.0.6",
     "autoprefixer": "^10.4.21",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "cssnano": "^7.1.2",
     "playwright": "^1.56.1",
     "postcss": "^8.5.6",
@@ -79,13 +82,18 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "storybook": "^10.0.2",
+    "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3",
     "vite": "^7.1.12",
     "vitest": "^4.0.6"
   },
   "dependencies": {
-    "tailwind-merge": "^3.3.1",
+    "@radix-ui/react-accordion": "^1.2.12",
+    "@radix-ui/react-navigation-menu": "^1.2.14",
+    "@types/react-datepicker": "^6.2.0",
+    "lucide-react": "^0.553.0",
+    "react-datepicker": "^8.9.0",
     "vite-plugin-dts": "^4.5.4"
   }
 }

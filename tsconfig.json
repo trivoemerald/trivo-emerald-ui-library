@@ -23,7 +23,13 @@
     /* Library mode */
     "declaration": true,
     "declarationMap": true,
-    "emitDeclarationOnly": false
+    "emitDeclarationOnly": false,
+
+    /* Path aliases for shadcn */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist", "**/*.stories.tsx", "**/*.test.tsx"]
