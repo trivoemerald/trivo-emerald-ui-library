@@ -65,14 +65,14 @@ export const Button: React.FC<ButtonProps> = ({
 
   // Variant classes (without colors - those will be in style)
   const variantClasses = {
-    filled: "text-white",
+    filled: "text-white border-none",
     outline: "bg-transparent border-2",
     subtle: "bg-transparent hover:bg-black/5",
   };
 
   const classes = twMerge(
     // Base styles
-    "relative inline-flex items-center justify-center border-none cursor-pointer font-semibold transition-all duration-200 rounded-lg font-inherit",
+    "relative inline-flex items-center justify-center cursor-pointer font-semibold transition-all duration-200 rounded-lg font-inherit",
     // Size
     sizeClasses[size],
     // Variant
